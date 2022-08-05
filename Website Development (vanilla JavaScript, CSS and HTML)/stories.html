@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="description" content="London Business Times">
+    <meta name="author" content="JL">
+    <meta name="keywords" content="london, business, news, uk, europe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/stories.css">
+    <script src="https://kit.fontawesome.com/5b137c3f1e.js" crossorigin="anonymous"></script>
+    <title>London Business Times - The News That Matters To Your Business</title>
+
+    </head>
+    
+    <body>
+            <!-- Header -->
+<!--        Please refer to index.html for the comments about header-->
+        <header>
+<!--            dropdown menu-->
+            <div id="menu" class="dropmenu">
+                <div class="dropmenu-items">
+                    <a href="index.html"><span class="pointer">Home</span></a>
+                    
+                    <a href="stories.html"><span class="pointer">Stories</span></a>
+                    
+                    <a href="freeedition.html"><span class="pointer">This week's markets (free edition)</span></a>
+                    
+                    <a href="subscription.html"><span class="pointer">Subscription</span></a>
+                    
+                    <a href="login.html"><span class="pointer">Login</span></a>
+                    
+                    <a href="javascript: void(0)" class="buttonX" onclick="closeMenu()"><span class="pointer">&times;</span></a>
+                </div>
+            </div>
+            
+            <div class="hamburger" onclick="openMenu()"><span class="pointer">&#9776;</span></div>
+            
+
+            
+            <!--            logo for the website-->
+            <div href="main.html">
+                <img src="assets/logo.png" alt="Main Page" loading="lazy" class="logo">
+            
+            </div>
+        </header>
+        
+        <main>
+            <div class="panel">
+            </div>
+            
+            <div class="login"> 
+                
+                <div href="javascript: void(0)" class="login-buttonX" onclick="closeScrollLogin()"><span class="pointer">&times;</span></div>
+                
+<!--                this login text box covers the whole page when it is triggered. This is only triggered when the unsubscribed or logged-out reader tries to scroll all the way down to the bottom of the page or tries to read the articles by pressing on the "read more" link. This is because Unsubscribed readers do not have permission to read all the articles. -->
+                <div class="login-text">
+                 Please log in (and subscribe if you haven't already) to access the rest of the articles.
+                </div>
+                
+                <a href = "login.html" class = "login-link">
+                    <button class="login-button">Log in</button>
+                </a>
+            </div>
+            
+<!--            title for the stories section-->
+            
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" autofocus placeholder="Search articles"  onkeyup="searchFilter()">
+            </div>
+            
+            <div class="title">
+                This week's stories
+            </div>
+
+            <div class="item-container">
+                <div class="item-image"><img src="./assets/carou1.jpeg"></div>
+                
+                <div class="item-text">
+                    <h1>CBI warns of rising taxes and stagnant business investment</h1>
+                    
+                    <h2>CBI director-general Tony Danker will tell the Alliance Manchester Business School that a “return to business as usual in our economic policy, at this unique moment in British economic history, would be a mistake”. <span onclick="clickAppear()">Read more</span>
+                    </h2>
+                </div>
+            </div>
+            
+<!--            container to store one story item-->
+            <div class="item-container">
+                
+<!--                image for the story item-->
+                <div class="item-image"><img src="./assets/carou2.jpeg"></div>
+                
+<!--                text for the story item-->
+                <div class="item-text">
+<!--                    content of story item text-->
+                    <h1>Flight to cities to boost London businesses’ profitability</h1>
+                    
+                    <h2>Office occupancy rates in city centres will plummet as a result of a greater proportion of Brits working from home or remotely, according to the research. This is likely to prompt businesses located outside cities to migrate into city centres to capitalise on lower rents. <span onclick="clickAppear()">Read more</span>
+                    </h2>
+                </div>
+            </div>
+<!--            container to store one story item-->
+            <div class="item-container">
+    <!--                image for the story item-->
+                <div class="item-image"><img src="./assets/carou3.jpeg"></div>
+     <!--                text for the story item-->           
+                <div class="item-text">
+                    <h1>ITM Power runs a loss from operations of £26.7m in FY21 </h1>
+                    
+                    <h2>While sales revenue jumped 30% to £4.3m, adjusted EBITDA losses increased by 18% to stand at £21.4m. Total revenue and project grant funding stood at £5.1m, a decline of six per cent compared to the previous year. <span onclick="clickAppear()">Read more</span>
+                    </h2>
+                </div>
+            </div>
+            <!--            container to store one story item-->
+            <div class="item-container">
+                <!--                image for the story item-->
+                <div class="item-image"><img src="./assets/carou4.jpeg"></div>
+                  <!--                image for the story item-->  
+                <div class="item-text">
+                    <!--                text for the story item-->  
+                    <h1>Rishi Sunak hopes insurers could help fund social care costs. </h1>
+                    
+                    <h2>Chancellor Rishi Sunak has told Treasury officials to start talks with the insurance industry over potential new products to help finance social care costs. The news follows plans set out earlier this week by the Prime Minister to raise taxes on workers, employers and some investors. <span onclick="clickAppear()">Read more</span>
+                    </h2>
+                </div>
+            </div>
+            
+             <!--            container to store one story item-->
+            <div class="item-container">
+            <!--                image for the story item-->
+                <div class="item-image"><img src="./assets/carou5.jpeg"></div>
+                <!--                text for the story item--> 
+                <div class="item-text">
+                    <h1>Heathrow now 10th busiest European airport as passenger slump goes on </h1>
+                    
+                    <h2>Chief executive John Holland-Kaye said: “The Government has the tools to protect the UK’s international competitiveness which will boost the economic recovery and achieve its Global Britain ambitions. <span onclick="clickAppear()">Read more</span>
+                    </h2>
+                </div>
+            </div>
+            <!--            container to store one story item-->
+            <div class="item-container">
+                <!--                image for the story item-->
+                <div class="item-image"><img src="assets/headline1.jpeg"></div>
+                  <!--                text for the story item-->   
+                <div class="item-text">
+                    <h1>UK economy grew by 2.3 per cent in April as shops reopened</h1>
+                    
+                    <h2>The service sector grew by 3.4 per cent during the month, with consumer-facing services reopening as Covid restrictions eased. Output in the production sector fell by 1.3 per cent during April, the worst fall since January as three of the four sectors contracted.
+                    </h2> <span onclick="clickAppear()">Read more</span>
+                </div>
+            </div>
+          <!--            container to store one story item-->    
+            <div class="item-container">
+                
+                    <!--                image for the story item-->
+                <div class="item-image"><img src="assets/carou1.jpeg"></div>
+               <!--                text for the story item-->    
+                <div class="item-text">
+                    <h1>UK holidaymakers paid ‘more than £1bn’ on travel tests this summer</h1>
+                    
+                    <h2>UK holidaymakers could have paid more than £1bn for Covid tests this summer, a crippling levy that has kept the lid on the travel and aviation sector’s recovery.
+                    </h2> <span onclick="clickAppear()">Read more</span>
+                </div>
+            </div>
+          <!--            container to store one story item-->  
+            <div class="item-container">
+              <!--                image for the story item-->
+                <div class="item-image"><img src="assets/carou1.jpeg"></div>
+                <!--                text for the story item-->    
+                <div class="item-text">
+                    <h1>UK holidaymakers paid ‘more than £1bn’ on travel tests this summer</h1>
+                    
+                    <h2>UK holidaymakers could have paid more than £1bn for Covid tests this summer, a crippling levy that has kept the lid on the travel and aviation sector’s recovery.
+                    </h2> <span onclick="clickAppear()">Read more</span>
+                </div>
+            </div>
+         <!--            container to store one story item--> 
+            <div class="item-container">
+             <!--                image for the story item-->
+                <div class="item-image"><img src="assets/carou1.jpeg"></div>
+              <!--                text for the story item-->    
+                <div class="item-text">
+                    <h1>UK holidaymakers paid ‘more than £1bn’ on travel tests this summer</h1>
+                    
+                    <h2>UK holidaymakers could have paid more than £1bn for Covid tests this summer, a crippling levy that has kept the lid on the travel and aviation sector’s recovery.
+                    </h2> <span onclick="clickAppear()">Read more</span>
+                </div>
+            </div>
+        </main>
+<!--        add scripts-->
+        <script src="/Script/menu.js"></script>
+        <script src="/Script/searchFilter.js"></script>
+        <script src="/Script/scroll.js"></script>
+    </body>
+    
+    <footer>
+        <div class="social-media">
+            <div class="social-media-text">Follow us: </div>
+            <table class="social-media-pics">
+                <tr>
+                    <td><img src="./assets/facebook.png" alt="facebook"></td>
+                    <td><img src="./assets/instagram.png" alt="facebook"></td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/youtube.png" alt="facebook"></td>
+                    <td><img src="./assets/linkedin.png" alt="facebook"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer-column1">
+            <dl>
+                <dt>Legal</dt>
+                <dt>Terms & Conditions</dt>
+                <dt>Advertising</dt>
+                <dt>About</dt>
+                <dt>Copyright</dt>
+            </dl>
+        </div>
+        
+        <div class="footer-column1">
+            <dl>
+                <dt>Support</dt>
+                <dt>Careers</dt>
+                <dt>Site Map</dt>
+                <dt>Help</dt>
+                <dt>Contact Us</dt>
+            </dl>
+        </div>
+        
+        <div class="footer-column1">
+            <dl>
+                <dt>Team</dt>
+                <dt>Management</dt>
+                <dt>Editors</dt>
+                <dt>Designers</dt>
+                <dt>Photographers</dt>
+            </dl>
+        </div>
+    </footer>
+</html>

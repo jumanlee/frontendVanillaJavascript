@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="description" content="London Business Times">
+    <meta name="author" content="JL">
+    <meta name="keywords" content="london, business, news, uk, europe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <script src="https://kit.fontawesome.com/5b137c3f1e.js" crossorigin="anonymous"></script>
+    <title>London Business Times - The News That Matters To Your Business</title>
+
+    </head>
+    
+    <body>
+            <!-- Header -->
+        <header>
+            
+<!--            dropdown menu that links to all other webpages-->
+            <div id="menu" class="dropmenu">
+                <div class="dropmenu-items">
+                    <a href="index.html"><span class="pointer">Home</span></a>
+                    
+                    <a href="stories.html"><span class="pointer">Stories</span></a>
+                    
+                    <a href="freeedition.html"><span class="pointer">This week's markets (free edition)</span></a>
+                    
+                    <a href="subscription.html"><span class="pointer">Subscription</span></a>
+                    
+                    <a href="login.html"><span class="pointer">Login</span></a>
+                    
+                    <a href="javascript: void(0)" class="buttonX" onclick="closeMenu()"><span class="pointer">&times;</span></a>
+                </div>
+            </div>
+            
+<!--            hamburger button that reveals the menu once it is clicked-->
+            <div class="hamburger" onclick="openMenu()"><span class="pointer">&#9776;</span></div>
+            
+            <!--            logo for the website-->
+            <div href="main.html">
+                <img src="assets/logo.png" alt="Main Page" loading="lazy" class="logo">
+            </div>
+        </header>
+        
+        <main>
+<!--            create a panel at the beginning of main to separate it from the header.-->
+            <div class="panel">
+            </div>
+            
+<!--            title of the Carousel-->
+             <div class="top-stories">
+                Top Business Summaries
+            </div>
+            
+            <!--            structure for the top business summaries carousel article pictures-->
+            <div class="carousel-container">
+<!--                a container that contains all courousel images-->
+                <div class="carousel-slide">
+                    <img src="./assets/carou5.jpeg" id="lastClone" alt="carouselpic5">
+                    <img src="./assets/carou1.jpeg" alt="carouselpic1">
+                    <img src="./assets/carou2.jpeg" alt="carouselpic2">
+                    <img src="./assets/carou3.jpeg" alt="carouselpic3">
+                    <img src="./assets/carou4.jpeg" alt="carouselpic4">
+                    <img src="./assets/carou5.jpeg" alt="carouselpic5">
+                    <img src="./assets/carou1.jpeg" id="firstClone" alt="carouselpic1">
+                </div>
+            </div>
+            
+<!--            a container that contains all carousel titles and texts-->
+            <div class="carousel-text-container">
+                <div class="carousel-text-slide">
+                    <div class="carousel-text">
+                        <h1>Heathrow now 10th busiest European airport as passenger slump goes on 
+                        </h1>
+                        
+                        <p>
+                        Heathrow Airport has this morning urged ministers to streamline the UK’s travel restrictions as it revealed it had fallen to 10th on the list of Europe’s busiest airports.
+                        </p>
+                    </div>
+                    
+                    <div class="carousel-text">
+                        <h1>CBI warns of rising taxes and stagnant business investment 
+                        </h1>
+                        
+                        <p>
+                        One of the UK’s most influential business groups has cautioned Boris Johnson about recent tax rises
+                        </p>
+
+                    </div>
+                    
+                    <div class="carousel-text">
+                        <h1>Flight to cities to boost London businesses’ profitability
+                        </h1>
+                        
+                        <p>
+                        Changes to working patterns and companies flocking to cities as the spectre of Covid recedes will boost London businesses’ profitability, according to fresh analysis published today.
+                        </p>
+
+                    </div>
+                    
+                    <div class="carousel-text">
+                        <h1>ITM Power runs a loss from operations of £26.7m in FY21 
+                        </h1>
+                        
+                        <p>
+                        ITM Power, a company which manufactures hydrogen energy solutions, has announced meagre results for FY 2021, running a loss from operations of £26.7m.
+                        </p>
+                    </div>
+                    
+                    <div class="carousel-text">
+                        <h1>Rishi Sunak hopes insurers could help fund social care costs. 
+                        </h1>
+                        
+                        <p>
+                        Chancellor Rishi Sunak has told Treasury officials to start talks with the insurance industry over potential new products to help finance social care costs, a treasury source said, according to reports.
+                        </p>
+                    </div>
+                    
+                    <div class="carousel-text">
+                        <h1>Heathrow now 10th busiest European airport as passenger slump goes on 
+                        </h1>
+                        
+                        <p>
+                        Heathrow Airport has this morning urged ministers to streamline the UK’s travel restrictions as it revealed it had fallen to 10th on the list of Europe’s busiest airports.
+                        </p>
+                    </div>
+                    
+                    <div class="carousel-text">
+                        <h1>CBI warns of rising taxes and stagnant business investment  
+                        </h1>
+                        
+                        <p>
+                        One of the UK’s most influential business groups has cautioned Boris Johnson about recent tax rises. 
+                        </p>
+                    </div> 
+                </div>
+            </div>
+            <!--The previous arrow button to select carousel-->
+            <i class="fas fa-arrow-left" id = "prevBtn"></i>
+            <!--The after arrow button to select carousel-->
+            <i class="fas fa-arrow-right" id="nextBtn"></i>
+            
+<!--            Section displaying UK business news items. This displays the image first then the corresponding text-->
+            <div class="UK-business">
+            UK Business
+            </div>
+            <div class="UKheadline-container">
+                <img src="./assets/headline1.jpeg" alt="headline1 pic">
+                <strong class="UKheadline1">UK fintech firms raise $5.7bn in record-breaking year. <a href="stories.html">Read more</a></strong>
+
+                <img src="./assets/headline2.jpeg" alt="headline2 pic">
+                <strong class="UKheadline1">UK economy grew by 2.3% in April. <a href="stories.html">Read more</a></strong>
+            </div>
+            
+        <!--            Section displaying EU business news items. This displays the image first then the corresponding text-->
+            <div class="EU-business">
+            European Business
+            </div>
+            <div class="EUheadline-container">
+                <img src="./assets/headline3.jpeg" alt="headline3 pic">
+                <strong class="EUheadline1">Ukraine set to make Bitcoin legal. <a href="stories.html">Read more</a></strong>
+
+                <img src="./assets/headline4.jpeg" alt="headline4 pic">
+                <strong class="EUheadline1">Europe is set to see its biggest year for startups. <a href="stories.html">Read more</a></strong>
+            </div>
+            
+<!--            This section displays a short news summary video called "quicktake". -->
+            <div class="quicktake">
+                <div class="quicktake-text">
+                    This week's quicktake
+                </div>
+                <video controls autoplay muted loop>
+                    <source src="./assets/london.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+<!--                        script tags-->
+            <script src="/Script/menu.js"></script>
+            <script src="/Script/carousel.js"></script>
+        </main>
+    </body>
+    
+    <footer>
+        
+<!--        social media icons for the footer's "follow us" section-->
+        <div class="social-media">
+            <div class="social-media-text">Follow us: </div>
+            <table class="social-media-pics">
+                <tr>
+                    <td><img src="./assets/facebook.png" alt="facebook"></td>
+                    <td><img src="./assets/instagram.png" alt="facebook"></td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/youtube.png" alt="facebook"></td>
+                    <td><img src="./assets/linkedin.png" alt="facebook"></td>
+                </tr>
+            </table>
+        </div>
+        
+<!--        The following are lists of items in the footer-->
+        <div class="footer-column1">
+            <dl>
+                <dt>Legal</dt>
+                <dt>Terms & Conditions</dt>
+                <dt>Advertising</dt>
+                <dt>About</dt>
+                <dt>Copyright</dt>
+            </dl>
+        </div>
+        
+        <div class="footer-column1">
+            <dl>
+                <dt>Support</dt>
+                <dt>Careers</dt>
+                <dt>Site Map</dt>
+                <dt>Help</dt>
+                <dt>Contact Us</dt>
+            </dl>
+        </div>
+        
+        <div class="footer-column1">
+            <dl>
+                <dt>Team</dt>
+                <dt>Management</dt>
+                <dt>Editors</dt>
+                <dt>Designers</dt>
+                <dt>Photographers</dt>
+            </dl>
+        </div>
+    </footer>
+</html>

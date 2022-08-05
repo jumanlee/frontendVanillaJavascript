@@ -1,0 +1,69 @@
+@import url("/CSS/main.css");
+
+/*style the title of the article*/
+.title
+{
+    text-align: center;
+    font-size:2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*style the smaller title */
+.smallTitle
+{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #30435D;
+}
+
+/*format the image of the article*/
+article img
+{
+    height: 50vh;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*position the date of the article*/
+.date
+{
+    font-size: 1rem;
+    margin-left: 5px;
+    margin-right: auto;
+    display: block;
+    text-align: left;
+    margin-top: 5px;
+}
+
+/*style each paragraph of the article*/
+p
+{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+
+/*only minor adjustment for the text font of the title*/
+@media only screen and (max-width: 800px)
+{
+    .title
+    {
+        font-size:1.5rem;
+    }
+    .smallTitle
+    {
+        font-size: 1rem;
+    }
+    
+    p
+    {
+        font-size: 1rem;
+    }
+}

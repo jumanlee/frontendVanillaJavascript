@@ -1,0 +1,282 @@
+@import url("/CSS/main.css");
+
+/*style the title of the section*/
+.title
+{
+    font-size: 2.5rem;
+    text-decoration-line: overline underline;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+/*style the big titles*/
+h1 
+{
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+/*style the small texts*/
+h2
+{
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+
+/*style the search bar container*/
+.search-bar
+{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 50px;
+    width: 60%;
+}
+
+/*remove the highlight border effect when user clicks on search bar*/
+.search-bar input:focus
+{
+    outline: none;
+}
+
+/*style the search bar*/
+.search-bar input
+{
+    width: 90%;
+    height: 30px;
+    font-size: 1.45rem;
+    border-style: none;
+    padding-left: 10px;
+}
+
+/*set the search icon size*/
+.search-bar i
+{
+    font-size: 1.45rem;
+}
+
+/*style the stories images*/
+.item-container img
+{
+    width: 90%;
+    height 150px;
+}
+
+/*style the stories texts*/
+.item-text
+{   
+    width: 100%;
+    word-wrap: normal;
+}
+
+/*style the item from the container*/
+.item-container
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 20px;
+}
+
+/*login prompt will be triggered if unsubscribed readers try to read premium content*/
+.login
+{
+    transition: 1s;
+    position: fixed;
+    top: 0%;
+    height: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #30435D;;
+    opacity: 0.95;
+}
+
+/*style text for the login prompt*/
+.login-text
+{
+    text-align:center;
+    margin-top: 200px;
+    height: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    z-index: 2;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+/*style CLOSE button for the login prompt*/
+.login-buttonX 
+{
+    z-index: 3;
+    background-color: blue;
+    font-size: 3rem;
+    color: grey;
+    position: fixed;
+    right: 10%;
+    top: 10%;
+    height: 0%;
+    display: none;
+}
+
+/*style login button*/
+.login-button
+{
+    width: 150px;
+    height: 50px;
+    font-size: 1.5rem;
+    background-color: #800000;
+    color: white;
+    display: none;
+    z-index: 101;
+    opacity: 1;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+/*style the login button content*/
+.login-link
+{
+    text-decoration: none;
+    cursor: default;
+}
+
+button:hover
+{
+   filter: opacity(50%); 
+}
+
+/*style the "Read more" link in the story text*/
+h2 span
+{
+    font-weight: bold;
+    color: #30435D;
+    cursor: pointer;
+}
+
+/*readjust layout according to the screen width for small screen device*/
+@media only screen and (max-width: 800px)
+{
+    .item-container
+    {
+        display: block;
+    }
+    
+    .item-container img
+    {
+        width: 80%;
+        height: 130px;
+    }
+    
+    .item-text
+    {
+        margin-bottom: 50px;
+        width:95%;
+    }
+    
+    .title
+    {
+        text-align: left;
+        font-size: 1.5rem;
+        width:100%;
+        margin-left: 10px;
+    }
+    
+    h1 
+    {
+        font-size: 1.3rem;
+        font-weight: normal;
+    }
+
+    h2
+    {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    
+    .search-bar
+    {
+        width: 90%;
+    }
+    
+    .search-bar input
+    {
+        height: 25px;
+        font-size: 1rem;
+        width: 80%;
+    }
+    
+    .search-bar i
+    {
+        font-size: 1rem;
+    }
+    
+    .login-button
+    {
+        margin-top: 100px;
+        width: 100px;
+        height: 30px;
+        font-size: 1.2rem;
+    }
+    
+    .login-text
+    {
+        font-size: 1.3rem;
+    }
+}
+
+/*readjust layout according to the screen width for big browser*/
+@media only screen and (max-width: 1000px)
+{
+    .title
+    {
+        font-size: 1.5rem;
+    }
+    h1 
+    {
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+
+    h2
+    {
+        font-size: 0.8rem;
+        font-weight: normal;
+    } 
+}
+
+/*readjust text size according to the screen width for bigger browser*/
+@media only screen and (min-width: 1200px)
+{
+    h1 
+    {
+        font-size: 2rem;
+        font-weight: normal;
+    }
+
+    h2
+    {
+        font-size: 1.6rem;
+        font-weight: normal;
+    }
+}
+
+@media only screen and (max-width: 290px)
+{
+    .login-button
+    {
+        margin-top: 150px;
+    }
+}

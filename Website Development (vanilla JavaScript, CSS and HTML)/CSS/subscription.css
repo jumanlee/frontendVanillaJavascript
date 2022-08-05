@@ -1,0 +1,203 @@
+@import url("/CSS/main.css");
+
+/*style the image on the description section*/
+.description-image img
+{
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+/*container for description image*/
+.description-image
+{
+    margin-top: 50px;
+    width: 50%;
+    height: 100%;
+}
+
+/*style text for description section*/
+.description-text
+{
+    width: 40%;
+}
+
+/*format container for entire description section*/
+.description-container
+{
+
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+
+/*make first paragraph of the description text larger than the rest*/
+.description-text p:first-child
+{
+    font-size: 2.5rem;
+}
+
+/*make other paragraphs smaller */
+.description-text p:not(:first-child)
+{
+    font-size: 1.5rem;
+    color: red;
+    font-weight: bold;
+}
+
+/*style container for the subscription boxes */
+.subscription-container
+{
+    display: flex;   
+    justify-content: space-between;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+/*format the subscription title*/
+.subscription1-title
+{
+    text-align: center;
+
+    margin-top: 25px;
+    width: 85%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #30435D;
+}
+
+/*style the structure of the subsciprtion content in the container*/
+.subscription1
+{
+    display: grid;
+    width: 48%;
+    box-shadow: 15px 20px #808080;
+    font-size: 1.4rem;
+    grid-template-columns: 50% 50%;
+    border: 2px outset #30435D;
+    height: 600px;
+    margin-top: 50px;
+}
+
+/*make sure every item on the list has a space over the top*/
+ul li
+{
+    padding-top: 40px
+}
+
+/*give the div element in form a space over the top*/
+.form div
+{
+    padding-top: 90px;
+}
+
+/*move the subscribe button (thie third div element) to the center*/
+.form div:nth-child(3)
+{
+    text-align: center;
+}
+
+/*style the inner subscribe button*/
+.button
+{
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    background-color: #30435D;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover
+{
+   filter: opacity(50%); 
+}
+
+/*readjust the layout according to the smaller width size*/
+@media only screen and (max-width: 800px) 
+{
+    .description-container
+    {
+        display: block;
+        width: 100%;
+        margin: 0px;
+        min-height: 600px;
+    }
+    
+    .description-image
+    {
+        width: 100%;
+        height: 60%;
+        background-color: blue;
+    }
+    
+    .description-image img
+    {
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    
+    .description-text
+    {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .description-text p:first-child
+    {
+        font-size: 2rem;
+    }
+
+    .description-text p:not(:first-child)
+    {
+        font-size: 1rem;
+        color: red;
+        font-weight: bold;
+    }
+    
+    .subscription-container
+    {
+        display: block;
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+    
+    .subscription1
+    {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .description-container
+    {
+        min-height: 1000px;
+    }
+    
+    .description-text p:first-child
+    {
+        font-size: 1.3rem;
+    }
+    
+    .button
+    {
+        width: 110px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .subscription1-title
+    {
+        font-size: 1.2rem;
+    }
+
+    /*style the structure of the subsciprtion content in the container*/
+    .subscription1
+    {
+        font-size: 1rem;
+    }
+    
+}

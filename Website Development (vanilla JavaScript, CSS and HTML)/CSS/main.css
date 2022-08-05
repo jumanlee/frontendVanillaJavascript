@@ -1,0 +1,242 @@
+/*set font */
+body 
+{
+    font-family: Frutiger, Helvetica, sans-serif;
+}
+
+/*format the logo of the website*/
+.logo
+{
+    width: 19vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*style the header content*/
+header
+{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    height: 20vh;
+}
+
+/*style the drop down menu */
+.dropmenu
+{
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    transition: 0.5s;
+    right: 0;
+    font-size: 40px;
+}
+
+/*style the hamburger button*/
+.hamburger
+{
+    font-size: 6.5vh;
+    cursor: default;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+/*set the hover effect for clickable links*/
+span:hover
+{
+    filter: opacity(50%);
+}
+
+/*style the drop down menu items as a whole*/
+.dropmenu-items
+{
+    position: relative;
+    top: 0%;
+    width: 100%;
+    height: 28%;
+    text-align: center;
+    margin-top: 30px;
+    z-index: 1;
+    background-color:#30435D;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+}
+
+/*style each individual item line on the menu*/
+.dropmenu a
+{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 23px;
+    color: silver;
+    display: flex;
+    justify-content: space-around;
+    cursor: default;
+}
+
+/*style the close button*/
+.dropmenu a:last-child
+{
+    position:absolute;
+    top: 0;
+    right: 10px;
+    color: silver;
+    font-size: 40px;
+}
+
+/*cursor turns to a pointer whenever it touches the pointer class items*/
+.pointer
+{
+    cursor:pointer;
+}
+
+/*style the panel*/
+.panel
+{
+    min-height: 40px;
+    background-color: #30435D;
+}
+
+/*style the footer*/
+footer
+{
+    margin-top: 20px;
+    height: 50vh;
+    background-color: #30435D;
+    display: flex;
+    justify-content: space-around;
+/*    font size doesn't need to change dynamically here, unlike above title texts*/
+    font-family: Frutiger, Helvetica, sans-serif;
+    font-size: 19px;
+}
+
+/*set height for footer element*/
+footer div 
+{
+    height: 100%;
+}
+
+/*set height for each items on the footer*/
+footer div dl
+{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*make sure that the rest of the container does not trigger the pointer cursor*/
+dl
+{
+    cursor: default;
+}
+
+/*style each item on the footer list*/
+dt
+{
+    padding-top: 15px;
+    color: silver;
+}
+
+/*set filter and pointer to cursor when each dt element is hovered over*/
+dt:hover
+{
+    cursor: pointer;
+    filter: opacity(50%);
+}
+
+/*style titles of the footer lists*/
+dt:first-child
+{
+    font-weight: bold;
+    color: white;
+}
+
+/*style the set of social media icons plus title*/
+.social-media
+{
+    font-weight: bold;
+    color: silver;
+    width: 20%;
+    height:90%;
+    padding-top: 30px;
+
+}
+
+/*style the social media title text*/
+.social-media-text
+{
+    width: 80%;
+    height: 10%;
+}
+
+/*format the position of the social media images*/
+.social-media-pics
+{
+    margin-top: 10px;
+}
+
+/*format each specific image of the social media icon*/
+.social-media-pics img
+{
+    width:50px;
+    height: 50px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.social-media-pics img:hover
+{
+    filter:opacity(50%);
+}
+
+/*give some space to the 3rd and 4th social media icons on the left*/
+td:nth-child(2)
+{
+    padding-left: 30px;
+}
+
+/*readjust the footer layout when screen is small*/
+@media only screen and (max-width:768px)
+{
+
+    footer
+    {
+        display: flex;
+        height: 750px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .social-media
+    {
+        width: 100%;
+        height:30%;
+        font-size: 1rem;
+    }
+    
+    .social-media-pics img
+    {
+        width:50px;
+        height: 50px;
+        padding-bottom: 15px;
+    }
+
+        footer div 
+    {
+        width: 40%;
+        height: 30%;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:500px)
+{
+    .dropmenu a
+    {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="description" content="London Business Times">
+    <meta name="author" content="JL">
+    <meta name="keywords" content="london, business, news, uk, europe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/login.css">
+    <script src="https://kit.fontawesome.com/5b137c3f1e.js" crossorigin="anonymous"></script>
+    <title>London Business Times - Login</title>
+    </head>
+    
+    <body>
+        <header>
+<!--            dropdown menu-->
+            <div id="menu" class="dropmenu">
+                <div class="dropmenu-items">
+                    <a href="index.html"><span class="pointer">Home</span></a>
+                    
+                    <a href="stories.html"><span class="pointer">Stories</span></a>
+                    
+                    <a href="freeedition.html"><span class="pointer">This week's markets (free edition)</span></a>
+                    
+                    <a href="subscription.html"><span class="pointer">Subscription</span></a>
+                    
+                    <a href="login.html"><span class="pointer">Login</span></a>
+                    
+                    <a href="javascript: void(0)" class="buttonX" onclick="closeMenu()"><span class="pointer">&times;</span></a>
+                </div>
+            </div>
+            <!--            hamburger button that reveals the menu once it is clicked-->
+            <div class="hamburger" onclick="openMenu()"><span class="pointer">&#9776;</span></div>
+            
+
+            
+            <!--            logo for the website-->
+            <div href="main.html">
+                <img src="assets/logo.png" alt="Main Page" loading="lazy" class="logo">
+            
+            </div>
+        </header>
+        <!--            create a panel at the beginning of main to separate it from the header.-->
+                    <div class="panel">
+                    </div>
+        
+        <main>
+<!--            container to contain the login form-->
+            
+            <div class="login-container">
+                <form class="login">
+                    <label class="login-text">Login</label>
+                    <div class="login-error1">Email or password field is empty!</div>
+                    <div class="login-error2">Invalid email and/or password!</div>
+                    <input type="text" autofocus placeholder="Email">
+                    
+                    <input type="password" autofocus placeholder="Password">
+                    
+                    <button type="submit" form="login" value="Submit" class="login-submit" onclick="loginError()">Submit</button>
+                </form>
+                
+<!--                link which reveals the create account form when clicked.-->
+                    <div class="create-account-link"> Don't have an account yet? <span onclick="revealAccount()">Create account now</span></div>
+            </div>
+            
+<!--            container to contain the create account form-->
+            <div class="account-container">
+                <form class="account">
+                    <label class="account-text">Create Account</label>
+                    
+                    <div class="account-error1">Empty field. Try again!</div>
+                    <div class="account-error2">Invalid entry. Try again!</div>
+                    
+                    <input type="text" autofocus placeholder="Email">
+                    
+                    <input type="password" autofocus placeholder="Password">
+                    
+                    <input type="text" autofocus placeholder="First name">
+                    
+                    <input type="text" autofocus placeholder="Last name">
+                    
+                    <button type="submit" form="account" value="Submit" class="account-submit" onclick="accountError()">Create account</button>
+                </form>
+                
+                <!--                link which reveals the login form when clicked.-->
+                    <div class="login-link"> 
+                        Already have an account? 
+                        <span onclick="revealLogin()">Log in now</span> </div>
+            </div>
+        </main>
+        <script src="Script/login.js"></script>
+        <script src="Script/menu.js"></script>
+    </body>
+    <footer>
+<!--        footer is already explained in index.html-->
+        <div class="social-media">
+            <div class="social-media-text">Follow us: </div>
+            <table class="social-media-pics">
+                <tr>
+                    <td><img src="./assets/facebook.png" alt="facebook"></td>
+                    <td><img src="./assets/instagram.png" alt="facebook"></td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/youtube.png" alt="facebook"></td>
+                    <td><img src="./assets/linkedin.png" alt="facebook"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer-column1">
+            <dl>
+                <dt>Legal</dt>
+                <dt>Terms & Conditions</dt>
+                <dt>Advertising</dt>
+                <dt>About</dt>
+                <dt>Copyright</dt>
+            </dl>
+        </div>
+        
+        <div class="footer-column1">
+            <dl>
+                <dt>Support</dt>
+                <dt>Careers</dt>
+                <dt>Site Map</dt>
+                <dt>Help</dt>
+                <dt>Contact Us</dt>
+            </dl>
+        </div>
+        
+        <div class="footer-column1">
+            <dl>
+                <dt>Team</dt>
+                <dt>Management</dt>
+                <dt>Editors</dt>
+                <dt>Designers</dt>
+                <dt>Photographers</dt>
+            </dl>
+        </div>
+    </footer>
+</html>

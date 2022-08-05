@@ -1,0 +1,325 @@
+@import url("/CSS/main.css");
+
+/*style the title of carousel*/
+.top-stories
+{
+    margin-top: 50px;
+    font-family: Frutiger, Helvetica, sans-serif;
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+/*ensure that carousel images and texts have the same sizes and styling*/
+.carousel-container, .carousel-text-container
+{
+    width: 70%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 300px;
+    overflow: hidden; 
+}
+
+/*set size and position of carousel text container*/
+.carousel-text-container
+{
+    margin-top: 0;
+    min-height: 120px;
+}
+
+.carousel-text h1
+{
+    font-size: 1.7rem;
+}
+.carousel-text p
+{
+    font-size: 1.2rem;
+}
+
+/*to set size of carousel images*/
+.carousel-slide img
+{
+    height: 400px;
+    min-width: 550px;
+}
+
+.carousel-text
+{
+    height: 300px;
+    min-width: 550px;
+}
+
+/*flex the image and text carousel items*/
+.carousel-slide, .carousel-text-slide
+{
+    display:flex;
+    width: 100%;
+}
+
+/*previous button*/
+#prevBtn
+{
+    position: absolute;
+    top: 520px;
+    z-index: 10;
+    left: 12%;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/*next button*/
+#nextBtn
+{
+    position: absolute;
+    top: 520px;
+    z-index: 10;
+    right: 12%;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+#prevBtn:hover, #nextBtn:hover
+{
+    filter: opacity(50%);
+}
+
+/*styling the uk business  news section*/
+.UK-business
+{
+    width: 90%;
+    font-size: 2rem;
+    margin-left: 7%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    text-decoration-line: overline underline;
+}
+.UKheadline-container
+{
+    height: 500px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;  
+}
+
+.UKheadline-container strong
+{   
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    font-size: 1.5rem;
+}
+
+.UKheadline-container img
+{
+    width: 45%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.UKheadline1 a, .EUheadline1 a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #30435D;
+}
+
+.UKheadline1 a:hover, .EUheadline1 a:hover
+{
+    filter: opacity(50%);
+}
+
+/*styling the EU business news section*/
+.EU-business
+{
+    width: 90%;
+    font-size: 2rem;
+    margin-left: 7%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    text-decoration-line: overline underline;
+}
+
+.EUheadline-container
+{
+    height: 500px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;  
+}
+
+.EUheadline-container strong
+{   
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    font-size: 1.5rem;
+}
+
+.EUheadline-container img
+{
+    width: 45%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*styling the Quicktake video container*/
+.quicktake
+{
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    width: 90%;
+}
+
+.quicktake-text
+{
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline overline;
+    margin-bottom: 20px;
+}
+.quicktake video
+{
+    width: 100%;
+    height: 400px;
+}
+
+
+/*readjust styling for smaller screen or browser window*/
+@media only screen and (max-width: 800px)
+{
+        /* arrow buttons*/
+    #prevBtn, #nextBtn
+    {
+        background-color: #C0C0C0;
+        padding: 5px;
+    }
+
+    .top-stories
+    {
+        font-size: 1.5rem;
+    }  
+    
+    .carousel-text-container, .carousel-container
+    {
+        width: 100%;
+    }
+    
+    .carousel-text p, .carousel-text h1
+    {
+        width:500px;
+        font-size: 1.2rem;
+        margin-left: 0px;
+    }
+        
+    
+    .quicktake-text
+    {
+        text-align: center;
+        font-size: 1.5rem;
+        text-decoration: underline overline;
+        margin-bottom: 0px;
+    }
+    
+    .UKheadline-container
+    {
+        height: 750px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 
+    }
+    
+    .UK-business
+    {
+        font-size: 1.5rem;
+    }
+    
+    .UKheadline-container strong
+    {   
+        width: 100%;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.2rem;
+    }
+
+    .UKheadline-container img
+    {
+        width: 100%;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-top: 25px
+    }
+
+    .EU-business
+    {
+        font-size: 1.5rem;
+    }
+    
+    .EUheadline-container
+    {
+        height: 750px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+    }
+    
+    .EUheadline-container strong
+    {   
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+        font-size: 1.2rem;
+    }
+
+    .EUheadline-container img
+    {
+        width: 100%;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+}
+
+/*shrink the word size if screen width is less than 500px*/
+@media only screen and (max-width: 500px)
+{
+    .carousel-text p, .carousel-text h1
+    {
+        width:300px;
+        font-size: 1rem;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 290px)
+{
+    .carousel-text p, .carousel-text h1
+    {
+        width:270px;
+    }
+}
+
+
